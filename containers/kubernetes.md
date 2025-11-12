@@ -115,3 +115,7 @@ spec:
 
 ## Check API 
 `kubectl get --raw '/livez?verbose'`
+
+## Events
+`kubectl get events --sort-by='.lastTimestamp'`
+

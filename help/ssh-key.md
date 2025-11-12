@@ -18,16 +18,11 @@ Zsh
 eval "$(ssh-agent -s)"
 ```
 
-Config
+.ssh/config
 ```
-vim ~/.ssh/config
-
-Include ~/.orbstack/ssh/config
-
-Host github.com *.github.com
+Host github.com *.github.com *.gitlab-dedicated.com 
   AddKeysToAgent yes
   UseKeychain yes
-  PreferredAuthentications publickey
   IdentityFile ~/.ssh/name_of_private_key
 
 host i-* mi-*
